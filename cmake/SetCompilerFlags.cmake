@@ -1,0 +1,10 @@
+
+macro(SetCompilerFlags)
+  if(CMAKE_COMPILER_IS_GNUCC OR CMAKE_COMPILER_IS_GNUCXX)
+    set(warning_flags "-Wall -Wextra")
+    set ( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${warning_flags}" -o3 )
+    set ( CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG}" -o0 -g )
+    set ( CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE}" )
+    set ( CMAKE_CXX_STANDARD 17 )
+  endif()
+endmacro()
