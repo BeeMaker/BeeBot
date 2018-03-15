@@ -1,15 +1,14 @@
 #pragma once
 
 #include <nlohmann/json.hpp>
+#include <curl/curl>
 
 class AbstractPlateform {
 
     public:
 
         explicit
-        Plateform(std::string uri, std::string publicKey, std::string privateKey) :
-            _uri(uri), _publicKey(publicKey), _privateKey(privateKey) {
-            };
+        Plateform(std::string uri, std::string publicKey, std::string privateKey);
 
         // Get all information of market of 24h
         // Hight price day
@@ -40,7 +39,38 @@ class AbstractPlateform {
         std::string _publicKey;
         std::string _privateKey;
         std::vector<std::string currencies> _currencies;
+        std::unique_ptr<CURL> _curl;
 
 };
 
-class Plateform_bittrex :
+class Plateform_bittrex : AbstractPlateform {
+
+    public:
+
+        Plateform_bittrex (std::string publicKey, std::string privateKey, nlohmann::json currencies);
+
+        Plateform_bittrex (std::string publicKey, std::string privateKey, std::vector<std::string> currencies);
+
+        // Get all information of market of 24h
+        // Hight price day
+        // Low price day
+        // Volume
+        // ...
+        nlohmann::json getMarketSummary();
+
+        // Get currencies information
+        // Currency
+        // TaxFee
+        nlohmann::json getCurrenciesInformations();
+
+        // Get order book
+        // Quantity
+        // Rate
+        nlohmann::json getOrderBook();
+
+        // Buy limit
+        nlohmann::json buyLimit(double quantity, double price);
+
+        // Sell limit
+        nlohmann::json sellLimit(double quantity, double price);
+}
