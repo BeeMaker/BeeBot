@@ -1,0 +1,10 @@
+compile_commands.json
+cmake-build-debug/
+*.orig
+.idea/
+build_x86_64*
+tags
+gtags.files
+all
+.editorconfig
+build/
