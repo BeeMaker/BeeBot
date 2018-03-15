@@ -40,10 +40,12 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${PROJECT_RELEASE_TYPE}/b
 
 message("UPLOAD BIN IN ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}")
 
+hunter_add_package(Boost)
 hunter_add_package(nlohmann_json)
 hunter_add_package(PostgreSQL)
 hunter_add_package(CURL)
 
+find_package(Boost CONFIG REQUIRED)
 find_package(nlohmann_json REQUIRED)
 find_package(PostgreSQL REQUIRED)
 find_package(CURL REQUIRED)
