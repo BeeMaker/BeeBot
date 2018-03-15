@@ -34,11 +34,18 @@ import os
 import ycm_core
 
 flags = [
-    '-x',
-    'c++',
-    '-DlibBeeBot_EXPORTS',
-    '-I/usr/local/include',
-]
+        '-Wall',
+        '-Wextra',
+        '-Werror',
+        '-Wno-long-long',
+        '-Wno-variadic-macros',
+        '-Wno-#pragma-messages',
+        '-fexceptions',
+        '-DNDEBUG',
+        '-xc++',
+        '-std=c++14',
+        '-I/home/wv/bin/linux/64/gcc-7.1/include/c++/v1'
+        ]
 
 
 # Set this to the absolute path to the folder (NOT the file!) containing the

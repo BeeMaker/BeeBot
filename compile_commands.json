@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/barbare/Extern/BeeBot/build/srcs/libBeeCoin",
+  "command": "/usr/bin/c++  -DBeeCoin_EXPORTS  -fPIC   -std=gnu++14 -o CMakeFiles/BeeCoin.dir/bot.cpp.o -c /home/barbare/Extern/BeeBot/srcs/libBeeCoin/bot.cpp",
+  "file": "/home/barbare/Extern/BeeBot/srcs/libBeeCoin/bot.cpp"
+},
+{
+  "directory": "/home/barbare/Extern/BeeBot/build/srcs/libBeeCoin",
+  "command": "/usr/bin/c++  -DBeeCoin_EXPORTS  -fPIC   -std=gnu++14 -o CMakeFiles/BeeCoin.dir/plateform.cpp.o -c /home/barbare/Extern/BeeBot/srcs/libBeeCoin/plateform.cpp",
+  "file": "/home/barbare/Extern/BeeBot/srcs/libBeeCoin/plateform.cpp"
+},
+{
+  "directory": "/home/barbare/Extern/BeeBot/build/srcs/beeBot",
+  "command": "/usr/bin/c++   -isystem /home/barbare/.hunter/_Base/c2614bc/5beeca3/e7e216b/Install/include -isystem /home/barbare/.hunter/_Base/c2614bc/5beeca3/e7e216b/Install/include/postgresql/server    -std=gnu++14 -o CMakeFiles/BeeBot.dir/sources/main.cpp.o -c /home/barbare/Extern/BeeBot/srcs/beeBot/sources/main.cpp",
+  "file": "/home/barbare/Extern/BeeBot/srcs/beeBot/sources/main.cpp"
+}
+]
