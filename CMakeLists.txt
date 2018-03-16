@@ -8,8 +8,8 @@ cmake_minimum_required (VERSION 3.0)
 include (cmake/HunterGate.cmake)
 
 HunterGate(
-  URL "https://github.com/ruslo/hunter/archive/v0.20.20.tar.gz"
-  SHA1 "dad84b9db07ea98add81485a3c94ad9961cac92e"
+  URL "https://github.com/ruslo/hunter/archive/v0.20.21.tar.gz"
+  SHA1 "36bc6c263eb173697724e00adac8add4b3e52a31"
   )
 
 project (BeeBot LANGUAGES CXX VERSION 0.0.1)
@@ -40,12 +40,12 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${PROJECT_RELEASE_TYPE}/b
 
 message("UPLOAD BIN IN ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}")
 
-hunter_add_package(Boost)
+hunter_add_package(Boost COMPONENTS system)
 hunter_add_package(nlohmann_json)
 hunter_add_package(PostgreSQL)
-hunter_add_package(CURL)
+#hunter_add_package(CURL)
 
-find_package(Boost CONFIG REQUIRED)
+find_package(Boost CONFIG REQUIRED system)
 find_package(nlohmann_json REQUIRED)
 find_package(PostgreSQL REQUIRED)
 find_package(CURL REQUIRED)
