@@ -33,6 +33,9 @@ class AbstractPlateform {
         // Sell limit
         virtual nlohmann::json sellLimit(double quantity, double price) = 0;
 
+        size_t  data_write(void* buf, size_t size, size_t nmemb, void* userp);
+        bool    curl_read(const std::string &uri, std::ostream& os, uin16_t timeout);
+
 
     private:
         std::string _uri;
@@ -56,7 +59,7 @@ class Plateform_bittrex : AbstractPlateform {
         // Low price day
         // Volume
         // ...
-        nlohmann::json getMarketSummary();
+        nlohmann::json getMarketSummary(const std::string &v);
 
         // Get currencies information
         // Currency
