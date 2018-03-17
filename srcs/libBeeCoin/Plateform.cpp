@@ -41,7 +41,7 @@ bool Plateform::curl_read(const std::string &uri, std::ostream& os, uin16_t time
     return false;
 }
 
-Plateform_bittrex::Plateform_bittrex(const std::string &publicKey, const std::string &privateKey, nlohmann::json currencies) :
+Plateform_bittrex::Plateform_bittrex(const std::string &publicKey, const std::string &privateKey, nlohmann::json &currencies) :
     Plateform("https://bittrex.com/api/v1.1/public/", publicKey, privateKey) {
 
     //Parse du fichier json currencies to create std::vector
@@ -69,10 +69,11 @@ nlohmann::json Plateform_bittrex::getMarketSummary(const std::string &currency) 
 
     std::ostringstream oss;
     if (curl_read(request, oss) != CODE_OK) {
+
         throw std::logic_error("Cannot Read Request in api : " + request);
+
     }
 
-    nlohmann::json data = oss.str();
-
+    return nlohmann::json::parse(oss.str);
 
 }
