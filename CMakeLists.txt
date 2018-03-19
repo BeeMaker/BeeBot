@@ -48,7 +48,10 @@ hunter_add_package(PostgreSQL)
 find_package(Boost CONFIG REQUIRED system)
 find_package(nlohmann_json REQUIRED)
 find_package(PostgreSQL REQUIRED)
+
+# Libs out of hunter install
 find_package(CURL REQUIRED)
+find_package(openssl REQUIRED)
 
 set (libBeeCoin "BeeCoin")
 add_subdirectory(srcs/libBeeCoin)
