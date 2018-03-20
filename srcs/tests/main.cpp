@@ -1,3 +1,10 @@
-int main(int ac, char **) {
-  return 0;
+
+#include "Platform_bittrex.hpp"
+
+
+int main(int ac, char **av) {
+
+    Platform_bittrex plate("", "");
+
+    return 0;
 }

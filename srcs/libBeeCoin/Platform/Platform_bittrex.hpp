@@ -2,13 +2,13 @@
 
 #include "Platform.hpp"
 
-class Plateform_bittrex : AbstractPlateform {
+class Platform_bittrex : AbstractPlatform {
 
     public:
 
-        Plateform_bittrex (std::string publicKey, std::string privateKey);
+        Platform_bittrex (std::string publicKey, std::string privateKey);
 
-        Plateform_bittrex (std::string publicKey, std::string privateKey);
+        Platform_bittrex (std::string publicKey, std::string privateKey);
 
         // Get all information of market of 24h
         // Hight price day

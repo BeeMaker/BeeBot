@@ -3,12 +3,12 @@
 #include <nlohmann/json.hpp>
 #include "CurlWrapper.hpp"
 
-class AbstractPlateform {
+class AbstractPlatform {
 
     public:
 
         explicit
-        Plateform(std::string uri, std::string publicKey, std::string privateKey);
+        Platform(std::string uri, std::string publicKey, std::string privateKey);
 
         // Get all information of market of 24h
         // Hight price day

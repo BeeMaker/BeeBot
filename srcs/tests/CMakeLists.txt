@@ -1,9 +1,9 @@
 
 set(SOURCES ./sources/main.cpp)
 
-add_executable(${PROJECT_NAME} ${SOURCES}) 
+add_executable(test.run ${SOURCES})
 
-target_link_libraries (${PROJECT_NAME}
+target_link_libraries (test.run
   PostgreSQL::libpq
   nlohmann_json
   BeeCoin

@@ -13,4 +13,4 @@ set (
   )
 
 add_library (${libBeeCoin} SHARED ${SOURCES} ${HEADERS})
-target_link_libraries (${libBeeCoin} PRIVATE ${CURL_LIBRARIES} PostgreSQL::libpq nlohmann_json Boost::system openssl::hmac)
+target_link_libraries (${libBeeCoin} PRIVATE ${CURL_LIBRARIES} PostgreSQL::libpq nlohmann_json Boost::system OpenSSL::Crypto OpenSSL::SSL)
