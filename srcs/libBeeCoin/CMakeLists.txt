@@ -1,15 +1,19 @@
 set (
   SOURCES
-  bot.cpp
-  plateform.cpp
-  Scheduler.cpp
+  HttpRequest/CurlWrapper.cpp
+  Platform/Platform.cpp
+  Platform/Platform_bittrex.cpp
+  Utils/hmac.cpp
+  Utils/SchedulerTask.cpp
   )
 
 set (
   HEADERS
-  bot.hpp
-  plateform.hpp
-  Scheduler.hpp
+  HttpRequest/CurlWrapper.hpp
+  Platform/Platform.hpp
+  Platform/Platform_bittrex.hpp
+  Utils/hmac.hpp
+  Utils/SchedulerTask.hpp
   )
 
 add_library (${libBeeCoin} SHARED ${SOURCES} ${HEADERS})
