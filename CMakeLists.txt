@@ -51,9 +51,11 @@ find_package(PostgreSQL REQUIRED)
 
 # Libs out of hunter install
 find_package(CURL REQUIRED)
-find_package(openssl REQUIRED)
+find_package(OpenSSL REQUIRED)
 
 set (libBeeCoin "BeeCoin")
 add_subdirectory(srcs/libBeeCoin)
 
 add_subdirectory(srcs/beeBot)
+
+add_subdirectory(srcs/tests)
