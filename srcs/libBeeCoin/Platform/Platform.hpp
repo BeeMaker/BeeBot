@@ -1,7 +1,8 @@
 #pragma once
 
+#include "HttpRequest/CurlWrapper.hpp"
+
 #include <nlohmann/json.hpp>
-#include "CurlWrapper.hpp"
 
 class AbstractPlatform {
 

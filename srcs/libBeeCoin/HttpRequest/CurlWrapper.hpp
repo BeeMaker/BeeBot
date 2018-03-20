@@ -13,7 +13,7 @@ class CurlWrapper {
 
         // Api public of curl wrapper
         void setHeader(const std::string &header);
-        std::string get(const std::string &request);
+        std::string get(const std::string &uri, const std::string &api, const std::map<std::string, std::string>data);
 
     private:
 

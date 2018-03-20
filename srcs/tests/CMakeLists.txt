@@ -1,5 +1,5 @@
 
-set(SOURCES ./sources/main.cpp)
+set(SOURCES main.cpp)
 
 add_executable(test.run ${SOURCES})
 

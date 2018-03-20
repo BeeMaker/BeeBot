@@ -1,4 +1,5 @@
 #include "CurlWrapper.hpp"
+#include <sstream>
 
 CurlWrapper::CurlWrapper(unsigned long timeout) : _timeout(timeout){
 
@@ -40,13 +41,15 @@ void CurlWrapper::setHeader(const std::string &header) {
 
 std::string CurlWrapper::get(const std::string &uri, const std::string &api, const std::map<std::string, std::string>data) {
 
-    std::string request = stringify(data);
-    if (uri.)
+    std::stringstream request;
 
-    curl_easy_setopt(_curl, CURLOPT_URL, uri + api + request);
+    request << uri << (uri.back() != '/' ? "/" : "") << api << stringify(data);
+
+    curl_easy_setopt(_curl, CURLOPT_URL, request.str().c_str());
 
     if (curl_easy_perform(_curl) != CURLE_OK) {
-        throw std::logic_error("Easy perform failed with request : " + request);
+        std::string error = "Easy perform failed with request : " + request.str();
+        throw std::logic_error(error);
     }
     return _data;
 }
@@ -60,7 +63,10 @@ std::string CurlWrapper::stringify(const std::map<std::string, std::string> data
         if (request != "?") {
             request += "&";
         }
-        request += elem;
+        request += elem.first;
+        request += "=";
+        request += elem.second;
+
     }
 
     return request;

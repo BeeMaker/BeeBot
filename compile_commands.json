@@ -1,17 +1,37 @@
 [
 {
-  "directory": "/home/barbare/Extern/BeeBot/build/srcs/libBeeCoin",
-  "command": "/usr/bin/c++  -DBeeCoin_EXPORTS  -fPIC   -std=gnu++14 -o CMakeFiles/BeeCoin.dir/bot.cpp.o -c /home/barbare/Extern/BeeBot/srcs/libBeeCoin/bot.cpp",
-  "file": "/home/barbare/Extern/BeeBot/srcs/libBeeCoin/bot.cpp"
+  "directory": "/home/barbare/project/BeeBot/build/srcs/libBeeCoin",
+  "command": "/usr/bin/c++   -DBeeCoin_EXPORTS -isystem /home/barbare/.hunter/_Base/36bc6c2/dffde48/74d6cb7/Install/include -isystem /home/barbare/.hunter/_Base/36bc6c2/dffde48/74d6cb7/Install/include/postgresql/server  -fPIC   -std=gnu++14 -o CMakeFiles/BeeCoin.dir/HttpRequest/CurlWrapper.cpp.o -c /home/barbare/project/BeeBot/srcs/libBeeCoin/HttpRequest/CurlWrapper.cpp",
+  "file": "/home/barbare/project/BeeBot/srcs/libBeeCoin/HttpRequest/CurlWrapper.cpp"
 },
 {
-  "directory": "/home/barbare/Extern/BeeBot/build/srcs/libBeeCoin",
-  "command": "/usr/bin/c++  -DBeeCoin_EXPORTS  -fPIC   -std=gnu++14 -o CMakeFiles/BeeCoin.dir/plateform.cpp.o -c /home/barbare/Extern/BeeBot/srcs/libBeeCoin/plateform.cpp",
-  "file": "/home/barbare/Extern/BeeBot/srcs/libBeeCoin/plateform.cpp"
+  "directory": "/home/barbare/project/BeeBot/build/srcs/libBeeCoin",
+  "command": "/usr/bin/c++   -DBeeCoin_EXPORTS -isystem /home/barbare/.hunter/_Base/36bc6c2/dffde48/74d6cb7/Install/include -isystem /home/barbare/.hunter/_Base/36bc6c2/dffde48/74d6cb7/Install/include/postgresql/server  -fPIC   -std=gnu++14 -o CMakeFiles/BeeCoin.dir/Platform/Platform.cpp.o -c /home/barbare/project/BeeBot/srcs/libBeeCoin/Platform/Platform.cpp",
+  "file": "/home/barbare/project/BeeBot/srcs/libBeeCoin/Platform/Platform.cpp"
 },
 {
-  "directory": "/home/barbare/Extern/BeeBot/build/srcs/beeBot",
-  "command": "/usr/bin/c++   -isystem /home/barbare/.hunter/_Base/c2614bc/5beeca3/e7e216b/Install/include -isystem /home/barbare/.hunter/_Base/c2614bc/5beeca3/e7e216b/Install/include/postgresql/server    -std=gnu++14 -o CMakeFiles/BeeBot.dir/sources/main.cpp.o -c /home/barbare/Extern/BeeBot/srcs/beeBot/sources/main.cpp",
-  "file": "/home/barbare/Extern/BeeBot/srcs/beeBot/sources/main.cpp"
+  "directory": "/home/barbare/project/BeeBot/build/srcs/libBeeCoin",
+  "command": "/usr/bin/c++   -DBeeCoin_EXPORTS -isystem /home/barbare/.hunter/_Base/36bc6c2/dffde48/74d6cb7/Install/include -isystem /home/barbare/.hunter/_Base/36bc6c2/dffde48/74d6cb7/Install/include/postgresql/server  -fPIC   -std=gnu++14 -o CMakeFiles/BeeCoin.dir/Platform/Platform_bittrex.cpp.o -c /home/barbare/project/BeeBot/srcs/libBeeCoin/Platform/Platform_bittrex.cpp",
+  "file": "/home/barbare/project/BeeBot/srcs/libBeeCoin/Platform/Platform_bittrex.cpp"
+},
+{
+  "directory": "/home/barbare/project/BeeBot/build/srcs/libBeeCoin",
+  "command": "/usr/bin/c++   -DBeeCoin_EXPORTS -isystem /home/barbare/.hunter/_Base/36bc6c2/dffde48/74d6cb7/Install/include -isystem /home/barbare/.hunter/_Base/36bc6c2/dffde48/74d6cb7/Install/include/postgresql/server  -fPIC   -std=gnu++14 -o CMakeFiles/BeeCoin.dir/Utils/hmac.cpp.o -c /home/barbare/project/BeeBot/srcs/libBeeCoin/Utils/hmac.cpp",
+  "file": "/home/barbare/project/BeeBot/srcs/libBeeCoin/Utils/hmac.cpp"
+},
+{
+  "directory": "/home/barbare/project/BeeBot/build/srcs/libBeeCoin",
+  "command": "/usr/bin/c++   -DBeeCoin_EXPORTS -isystem /home/barbare/.hunter/_Base/36bc6c2/dffde48/74d6cb7/Install/include -isystem /home/barbare/.hunter/_Base/36bc6c2/dffde48/74d6cb7/Install/include/postgresql/server  -fPIC   -std=gnu++14 -o CMakeFiles/BeeCoin.dir/Utils/SchedulerTask.cpp.o -c /home/barbare/project/BeeBot/srcs/libBeeCoin/Utils/SchedulerTask.cpp",
+  "file": "/home/barbare/project/BeeBot/srcs/libBeeCoin/Utils/SchedulerTask.cpp"
+},
+{
+  "directory": "/home/barbare/project/BeeBot/build/srcs/beeBot",
+  "command": "/usr/bin/c++    -isystem /home/barbare/.hunter/_Base/36bc6c2/dffde48/74d6cb7/Install/include -isystem /home/barbare/.hunter/_Base/36bc6c2/dffde48/74d6cb7/Install/include/postgresql/server    -std=gnu++14 -o CMakeFiles/BeeBot.dir/sources/main.cpp.o -c /home/barbare/project/BeeBot/srcs/beeBot/sources/main.cpp",
+  "file": "/home/barbare/project/BeeBot/srcs/beeBot/sources/main.cpp"
+},
+{
+  "directory": "/home/barbare/project/BeeBot/build/srcs/tests",
+  "command": "/usr/bin/c++    -isystem /home/barbare/.hunter/_Base/36bc6c2/dffde48/74d6cb7/Install/include -isystem /home/barbare/.hunter/_Base/36bc6c2/dffde48/74d6cb7/Install/include/postgresql/server    -std=gnu++14 -o CMakeFiles/test.run.dir/main.cpp.o -c /home/barbare/project/BeeBot/srcs/tests/main.cpp",
+  "file": "/home/barbare/project/BeeBot/srcs/tests/main.cpp"
 }
 ]
