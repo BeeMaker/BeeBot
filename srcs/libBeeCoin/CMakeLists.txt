@@ -16,5 +16,7 @@ set (
   Utils/SchedulerTask.hpp
   )
 
-add_library (${libBeeCoin} SHARED ${SOURCES} ${HEADERS})
-target_link_libraries (${libBeeCoin} PRIVATE ${CURL_LIBRARIES} PostgreSQL::libpq nlohmann_json Boost::system OpenSSL::Crypto OpenSSL::SSL)
+add_library (${libBeeCoin} ${SOURCES} ${HEADERS})
+add_library (lib::beecoin ALIAS ${libBeeCoin})
+
+target_include_directories(${libBeeCoin} PUBLIC ${CMAKE_CURRENT_LIST_DIR}/HttpRequest ${CMAKE_CURRENT_LIST_DIR}/Platform ${CMAKE_CURRENT_LIST_DIR}/Utils)
