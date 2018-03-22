@@ -1,15 +1,16 @@
 #pragma once
 
-#include "HttpRequest/CurlWrapper.hpp"
+#include "CurlWrapper.hpp"
 
 #include <nlohmann/json.hpp>
 
-class AbstractPlatform {
+class IPlatform {
 
     public:
 
-        explicit
-        Platform(std::string uri, std::string publicKey, std::string privateKey);
+        using listData = std::map<std::string, std::string>;
+
+        IPlatform(const std::string &uri, const std::string &publicKey, const std::string &privateKey);
 
         // Get all information of market of 24h
         // Hight price day
@@ -33,6 +34,12 @@ class AbstractPlatform {
 
         // Sell limit
         virtual nlohmann::json sellLimit(double quantity, double price) = 0;
+
+        // Get uri
+        std::string getUri();
+
+        // Request call
+        std::string get(const std::string &api, const listData lstdata);
 
 
     private:
