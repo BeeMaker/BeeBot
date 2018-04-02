@@ -8,13 +8,14 @@ cmake_minimum_required (VERSION 3.0)
 include (cmake/HunterGate.cmake)
 
 HunterGate(
-  URL "https://github.com/ruslo/hunter/archive/v0.20.21.tar.gz"
-  SHA1 "36bc6c263eb173697724e00adac8add4b3e52a31"
+  URL "https://github.com/barbarebzhdev/hunter/archive/v0.20.30.tar.gz"
+  SHA1 "a61584e9047077903f23e32c7fab53ba13d0d03d"
   )
 
 project (BeeBot LANGUAGES CXX VERSION 0.0.1)
 
 set (CMAKE_CXX_STANDARD 14)
+set (CMAKE_CXX_COMPILER clang++)
 
 # Symbol list
 set (CMAKE_EXPORT_COMPILE_COMMANDS ON)
@@ -40,22 +41,24 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${PROJECT_RELEASE_TYPE}/b
 
 message("UPLOAD BIN IN ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}")
 
-hunter_add_package(Boost COMPONENTS system)
+hunter_add_package(Boost COMPONENTS system program_options)
 hunter_add_package(nlohmann_json)
 hunter_add_package(PostgreSQL)
+hunter_add_package(cryptopp)
 #hunter_add_package(CURL)
 
-find_package(Boost CONFIG REQUIRED system)
+find_package(Boost CONFIG REQUIRED system program_options)
+
+find_package(cryptopp CONFIG REQUIRED)
 find_package(nlohmann_json REQUIRED)
 find_package(PostgreSQL REQUIRED)
 
 # Libs out of hunter install
 find_package(CURL REQUIRED)
-find_package(OpenSSL REQUIRED)
 
 set (libBeeCoin "BeeCoin")
 add_subdirectory(srcs/libBeeCoin)
 
-add_subdirectory(srcs/beeBot)
-
+#add_subdirectory(srcs/beeBot)
+#
 add_subdirectory(srcs/tests)

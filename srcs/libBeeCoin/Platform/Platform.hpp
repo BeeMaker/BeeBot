@@ -41,6 +41,8 @@ class IPlatform {
         // Request call
         std::string get(const std::string &api, const listData lstdata);
 
+        void setHeader(const listData lstHeader);
+
 
     private:
         std::string _uri;

@@ -9,7 +9,11 @@ std::string IPlatform::getUri() {
     return _uri;
 }
 
-std::string IPlatform::get(const std::string &api, const std::map<std::string, std::string>data) {
+std::string IPlatform::get(const std::string &api, const listData data) {
 
     return (_curlWrapper.get()->get(_uri, api, data));
+}
+
+void IPlatform::setHeader(const listData lstHeader) {
+
 }

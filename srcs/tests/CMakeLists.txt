@@ -4,8 +4,11 @@ set(SOURCES main.cpp)
 add_executable(test.run ${SOURCES})
 
 target_link_libraries (test.run
-  PostgreSQL::libpq
+  Boost::program_options
   nlohmann_json
-  BeeCoin
+  lib::beecoin
   )
 
+#
+# PostgreSQL::libpq
+#
