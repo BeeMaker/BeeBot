@@ -1,15 +1,16 @@
 # Use postgres/example user/password credentials
-version: '3.6'
-
+version: "3"
 services:
   db:
-    image: postgres:alpine
-    restart: always
+    image: postgres:10.3-alpine
+    container_name: beeDB
+    restart: "no"
     environment:
-      POSTGRES_PASSWORD: postgresBeeCoin
+      POSTGRES_PASSWORD: "2yNm73hUk9yFtJpo"
+      POSTGRES_USER: "bot"
     volumes:
-      - postgresql:/var/lib/postgres
-      - postgresql_data:/var/lib/postgres/data
+      - ./psql/postgresql:/var/lib/postgres
+      - ./psql/postgresql_data:/var/lib/postgres/data
     ports:
       - 9876:9876
 
@@ -18,6 +19,3 @@ networks:
     external:
       name: beeNet
 
-volumes:
-  postgresql:
-  postgresql_data:
