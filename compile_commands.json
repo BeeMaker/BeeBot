@@ -1,27 +1,32 @@
 [
 {
   "directory": "/home/barbare/Extern/BeeBot/build/srcs/libBeeCoin",
-  "command": "clang++   -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/HttpRequest -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/Platform -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/Utils -isystem /home/barbare/.hunter/_Base/a61584e/c6d8648/2e29ba2/Install/include/cryptopp    -std=gnu++14 -o CMakeFiles/BeeCoin.dir/HttpRequest/CurlWrapper.cpp.o -c /home/barbare/Extern/BeeBot/srcs/libBeeCoin/HttpRequest/CurlWrapper.cpp",
+  "command": "/usr/bin/c++   -isystem /usr/local/include -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/HttpRequest -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/Platform -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/Utils -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/Database -isystem /home/barbare/.hunter/_Base/a61584e/c6d8648/2e29ba2/Install/include/cryptopp -isystem /home/barbare/.hunter/_Base/a61584e/c6d8648/2e29ba2/Install/include    -std=gnu++14 -o CMakeFiles/BeeCoin.dir/HttpRequest/CurlWrapper.cpp.o -c /home/barbare/Extern/BeeBot/srcs/libBeeCoin/HttpRequest/CurlWrapper.cpp",
   "file": "/home/barbare/Extern/BeeBot/srcs/libBeeCoin/HttpRequest/CurlWrapper.cpp"
 },
 {
   "directory": "/home/barbare/Extern/BeeBot/build/srcs/libBeeCoin",
-  "command": "clang++   -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/HttpRequest -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/Platform -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/Utils -isystem /home/barbare/.hunter/_Base/a61584e/c6d8648/2e29ba2/Install/include/cryptopp    -std=gnu++14 -o CMakeFiles/BeeCoin.dir/Platform/Platform.cpp.o -c /home/barbare/Extern/BeeBot/srcs/libBeeCoin/Platform/Platform.cpp",
+  "command": "/usr/bin/c++   -isystem /usr/local/include -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/HttpRequest -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/Platform -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/Utils -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/Database -isystem /home/barbare/.hunter/_Base/a61584e/c6d8648/2e29ba2/Install/include/cryptopp -isystem /home/barbare/.hunter/_Base/a61584e/c6d8648/2e29ba2/Install/include    -std=gnu++14 -o CMakeFiles/BeeCoin.dir/Platform/Platform.cpp.o -c /home/barbare/Extern/BeeBot/srcs/libBeeCoin/Platform/Platform.cpp",
   "file": "/home/barbare/Extern/BeeBot/srcs/libBeeCoin/Platform/Platform.cpp"
 },
 {
   "directory": "/home/barbare/Extern/BeeBot/build/srcs/libBeeCoin",
-  "command": "clang++   -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/HttpRequest -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/Platform -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/Utils -isystem /home/barbare/.hunter/_Base/a61584e/c6d8648/2e29ba2/Install/include/cryptopp    -std=gnu++14 -o CMakeFiles/BeeCoin.dir/Platform/Platform_bittrex.cpp.o -c /home/barbare/Extern/BeeBot/srcs/libBeeCoin/Platform/Platform_bittrex.cpp",
+  "command": "/usr/bin/c++   -isystem /usr/local/include -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/HttpRequest -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/Platform -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/Utils -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/Database -isystem /home/barbare/.hunter/_Base/a61584e/c6d8648/2e29ba2/Install/include/cryptopp -isystem /home/barbare/.hunter/_Base/a61584e/c6d8648/2e29ba2/Install/include    -std=gnu++14 -o CMakeFiles/BeeCoin.dir/Platform/Platform_bittrex.cpp.o -c /home/barbare/Extern/BeeBot/srcs/libBeeCoin/Platform/Platform_bittrex.cpp",
   "file": "/home/barbare/Extern/BeeBot/srcs/libBeeCoin/Platform/Platform_bittrex.cpp"
 },
 {
   "directory": "/home/barbare/Extern/BeeBot/build/srcs/libBeeCoin",
-  "command": "clang++   -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/HttpRequest -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/Platform -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/Utils -isystem /home/barbare/.hunter/_Base/a61584e/c6d8648/2e29ba2/Install/include/cryptopp    -std=gnu++14 -o CMakeFiles/BeeCoin.dir/Utils/SchedulerTask.cpp.o -c /home/barbare/Extern/BeeBot/srcs/libBeeCoin/Utils/SchedulerTask.cpp",
+  "command": "/usr/bin/c++   -isystem /usr/local/include -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/HttpRequest -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/Platform -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/Utils -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/Database -isystem /home/barbare/.hunter/_Base/a61584e/c6d8648/2e29ba2/Install/include/cryptopp -isystem /home/barbare/.hunter/_Base/a61584e/c6d8648/2e29ba2/Install/include    -std=gnu++14 -o CMakeFiles/BeeCoin.dir/Utils/SchedulerTask.cpp.o -c /home/barbare/Extern/BeeBot/srcs/libBeeCoin/Utils/SchedulerTask.cpp",
   "file": "/home/barbare/Extern/BeeBot/srcs/libBeeCoin/Utils/SchedulerTask.cpp"
 },
 {
+  "directory": "/home/barbare/Extern/BeeBot/build/srcs/libBeeCoin",
+  "command": "/usr/bin/c++   -isystem /usr/local/include -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/HttpRequest -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/Platform -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/Utils -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/Database -isystem /home/barbare/.hunter/_Base/a61584e/c6d8648/2e29ba2/Install/include/cryptopp -isystem /home/barbare/.hunter/_Base/a61584e/c6d8648/2e29ba2/Install/include    -std=gnu++14 -o CMakeFiles/BeeCoin.dir/Database/Database.cpp.o -c /home/barbare/Extern/BeeBot/srcs/libBeeCoin/Database/Database.cpp",
+  "file": "/home/barbare/Extern/BeeBot/srcs/libBeeCoin/Database/Database.cpp"
+},
+{
   "directory": "/home/barbare/Extern/BeeBot/build/srcs/tests",
-  "command": "clang++   -isystem /home/barbare/.hunter/_Base/a61584e/c6d8648/2e29ba2/Install/include -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/HttpRequest -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/Platform -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/Utils -isystem /home/barbare/.hunter/_Base/a61584e/c6d8648/2e29ba2/Install/include/cryptopp    -std=gnu++14 -o CMakeFiles/test.run.dir/main.cpp.o -c /home/barbare/Extern/BeeBot/srcs/tests/main.cpp",
+  "command": "/usr/bin/c++   -isystem /usr/local/include -isystem /home/barbare/.hunter/_Base/a61584e/c6d8648/2e29ba2/Install/include -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/HttpRequest -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/Platform -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/Utils -I/home/barbare/Extern/BeeBot/srcs/libBeeCoin/Database -isystem /home/barbare/.hunter/_Base/a61584e/c6d8648/2e29ba2/Install/include/cryptopp    -std=gnu++14 -o CMakeFiles/test.run.dir/main.cpp.o -c /home/barbare/Extern/BeeBot/srcs/tests/main.cpp",
   "file": "/home/barbare/Extern/BeeBot/srcs/tests/main.cpp"
 }
 ]
