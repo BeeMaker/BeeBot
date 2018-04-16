@@ -1,0 +1,21 @@
+{
+  "platform": [
+    {
+      "bittrex": {
+        "publickey": "<publickey here>",
+        "privatekey": "<privatekey here>"
+      }
+    }
+  ],
+  "currencies": [
+    {
+      "USDT-BTC": {
+        "platform": "bittrex",
+        "rsi_buy": 55,
+        "rsi_sell": null,
+        "macd_positif": true,
+        "macd_gap": null
+      }
+    }
+  ]
+}
