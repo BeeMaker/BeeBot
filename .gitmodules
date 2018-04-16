@@ -1,0 +1,6 @@
+[submodule "library/libpqxx"]
+	path = library/libpqxx
+	url = https://github.com/jtv/libpqxx
+[submodule "library/postgres"]
+	path = library/postgres
+	url = https://github.com/taocpp/postgres

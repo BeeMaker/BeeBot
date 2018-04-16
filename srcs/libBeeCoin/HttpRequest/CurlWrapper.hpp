@@ -2,6 +2,7 @@
 
 #include <memory>
 #include <map>
+#include <sstream>
 
 #include <curl/curl.h>
 
@@ -17,13 +18,11 @@ class CurlWrapper {
 
     private:
 
-        // Private methods
-        size_t write(void* buf, size_t size, size_t nmemb, void* userp);
         std::string stringify(const std::map<std::string, std::string> data);
 
         // Private attributes
         CURL*           _curl;
         unsigned long   _timeout;
-        std::string     _data;
+        std::stringstream     _data;
 
 };
