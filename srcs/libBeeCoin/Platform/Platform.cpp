@@ -1,7 +1,7 @@
 #include "Platform.hpp"
 
 IPlatform::IPlatform(const std::string &uri, const std::string &publicKey, const std::string &privateKey) :
-    _uri(uri), _publicKey(publicKey), _privateKey(privateKey), _curlWrapper(std::make_unique<CurlWrapper>(10)) {
+    _uri(uri), _publicKey(publicKey), _privateKey(privateKey), _curlWrapper(std::make_unique<CurlWrapper>(100)) {
 
 }
 

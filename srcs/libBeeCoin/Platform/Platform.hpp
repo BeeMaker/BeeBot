@@ -1,6 +1,6 @@
 #pragma once
 
-#include "CurlWrapper.hpp"
+#include "../HttpRequest/CurlWrapper.hpp"
 
 #include <nlohmann/json.hpp>
 
@@ -12,12 +12,14 @@ class IPlatform {
 
         IPlatform(const std::string &uri, const std::string &publicKey, const std::string &privateKey);
 
+        virtual ~IPlatform() {};
+
         // Get all information of market of 24h
         // Hight price day
         // Low price day
         // Volume
         // ...
-        virtual nlohmann::json getMarketSummary() = 0;
+        virtual nlohmann::json getMarketSummary(const std::string &currency) = 0;
 
         // Get currencies information
         // Currency
@@ -30,10 +32,10 @@ class IPlatform {
         virtual nlohmann::json getOrderBook() = 0;
 
         // Buy limit
-        virtual nlohmann::json buyLimit(double quantity, double price) = 0;
+        virtual nlohmann::json buyLimit(const std::string &currency, double quantity, double price) = 0;
 
         // Sell limit
-        virtual nlohmann::json sellLimit(double quantity, double price) = 0;
+        virtual nlohmann::json sellLimit(const std::string &currency, double quantity, double price) = 0;
 
         // Get uri
         std::string getUri();
